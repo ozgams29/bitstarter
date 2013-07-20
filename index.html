@@ -11,6 +11,8 @@
    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300itali\c,400italic,500italic,700italic" rel="stylesheet" type="text/css">
    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,6\00italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+   <link href="http://vjs.zencdn.net/4.1/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/4.1/video.js"></script>     
    <style type="text/css">
 
 
@@ -101,11 +103,10 @@
 </head>
  <body>
 
-<video width="480" height="360" controls>
-  <source src="video1.mp4" type="video/mp4"/>
-  <source src="video1.webm" type="video/webm"/>
-  Your browser does not support the video tag.
-</video> 
+
+<video  class="video-js vjs-default-skin"  controls preload="auto" width="480" height="360" data-setup='{ "controls": true, "autoplay": false, "preload": "auto" }' >
+<source src="video/video1.mp4" type='video/mp4' />
+ </video>
 
 
   <div class="navbar navbar-inverse navbar-fixed-top">
