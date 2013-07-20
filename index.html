@@ -100,11 +100,20 @@
  </style>
 </head>
  <body>
- 
- <video width="320" height="240" controls>
-     <source src="video/video1.mp4" type="video/mp4">
-</video>
 
+   <script type="text/javascript" src="kaltura-html5player-widget/jquery-1.4.2.min.js" ></script>
+<!-- Include the css and javascript  -->
+<link rel="stylesheet" href="kaltura-html5player-widget/skins/jquery.ui.themes/jquery-ui-1.7.2.custom.css"></link> 
+<link rel="stylesheet" href="kaltura-html5player-widget/mwEmbed-player-static.css"></link> 
+<script type="text/javascript" src="kaltura-html5player-widget/mwEmbed-player-static.js"></script>
+
+<video controls poster="./media/sintel.jpg" width="720" height="306">
+  <source type="video/mp4" src="./media/sintel.mp4">
+  <source type="video/ogg" src="./media/sintel.ogg">
+  <track kind="subtitles" srclang="en" src="./media/sintel_en.srt"> 
+  <track kind="subtitles" srclang="ru" src="./media/sintel_ru.srt"> 
+</video>
+ 
   <div class="navbar navbar-inverse navbar-fixed-top">
    <div class="navbar-inner">
     <div class="container">
@@ -250,19 +259,6 @@
  </body>
   </html>
   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
    
    
    
