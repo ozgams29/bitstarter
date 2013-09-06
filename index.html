@@ -1,512 +1,296 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Fitspector: Serious workout analysis for curious athletes.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <link rel="stylesheet" type="text/css"
-        href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-  <link rel="stylesheet" type="text/css"
-        href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-  <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800">
-  <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css?family=Indie+Flower">
-  <link rel="stylesheet" type="text/css"
-        href="/css/fitspector.min.css">
+<html lang = "en">
+  <head>
+   <meta charset="utf-8">
+   <title> My First Bitstarter </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+   <link  rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+   <link  rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+   <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+   <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+   <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300itali\c,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,6\00italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+   <style type="text/css">
 
-  <script type="text/javascript"
-          src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js">
-  </script>
-  <script type="text/javascript"
-          src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js">
-  </script>
-  <script type="text/javascript"
-          src="/js/fitspector.min.js">
-  </script>
-</head>
-<body data-spy="scroll" data-target=".navbar">
-  <!-- AddThis Smart Layers BEGIN -->
-  <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
-  <!-- ----------------------------------------- AddThis smart layers  ----------------------------------------- -->
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e0d9be478d8a027"></script>
-  <script type="text/javascript">
-    addthis.layers({
-      'theme' : 'transparent',
-      'share' : {
-        'position' : 'left',
-        'numPreferredServices' : 4
-      },
-      'follow' : {
-        'services' : [
-          {'service': 'facebook', 'id': 'fitspector'},
-          {'service': 'twitter', 'id': 'fitspector'},
-          {'service': 'google_follow', 'id': '115638171785797148025/posts'}
-        ]
+
+
+ @media (min-width: 980px){
+   body{
+      padding-top: 60px;
       }
-    });
-  </script>
+      .linediv-l {
+       border-right: 1px white solid;
+        }
+       .linediv-r {
+        border-left: 1px white solid;
+       }
+     }
+    /* Landscape phones and down */
 
-  <!-- ------------------------------------------------ Navbar  ------------------------------------------------ -->
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-	<button type="button" class="btn btn-navbar"
-		data-toggle="collapse" data-target=".nav-collapse">
-	    <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-		</button>
-	<a class="brand" href="#"><img src="/img/logo.png" /></a>
-	<div class="nav-collapse collapse">
-	    <ui class="nav">
-	          <li class="active"><a href="#intro">Intro</a></li>
-		      <li><a href="#howitworks">How does it work?</a></li>
-		          <li><a href="#preorder">Preorder</a></li>
-			      <li><a href="#faq">FAQ</a></li>
-			        </ui>
-	    </div>
-      </div>
-    </div>
-  </div>
-  <!-- ------------------------------------------------ Header  ------------------------------------------------ -->
-  <div class="container" id="intro">
-    <div class="hero-unit">
-      <div class="row-fluid">
-        <div class="span3 offset2">
-          <img class="centered img" src="/img/logo-big.png" width="200" height="200" />
+    @media (max-width: 480px)  {
+ .copy  {
+    padding: 2.5% 10%;
+  }
+    .linediv-l {
+ border-top: 1px white solid;
+   }
+  .linediv-r {
+ border-top: 1px white solid;
+   } 
+ }
+ 
+ /* All form factors */
+ 
+    /* Main body and headings */
+   body{
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      .heading, .subheading {
+     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+     text-align: center;
+     }
+    p.lead {
+    padding-top: 1.5%;
+    font-size: 24px;
+    line-height: 30px;
+     }
+  p {
+      font-size: 18px;
+  line-height: 24px;
+ } 
+
+     /* Video pitch and Action */
+     .pitch {
+       padding: 2.5% 0%;
+     }
+     .order {
+     padding: 2% 0%;
+     }
+     .actions {
+     background-color: #343434;
+     padding: 3% 0%;
+    }
+    .video, .thermometer, .order, .social, .statistics {
+    text-align: center;
+   }
+   .statistics h3, .statistics p {
+   color: white;
+   }
+    /* Marketing Copy and Footer */
+ .copy {
+   padding-top: 2.5%;
+   padding-bottom: 2.5%;
+   text-align: justify;
+  }
+     .asset {
+ padding: 2.5% 0%; 
+    }
+ .footer {
+ color: #cccccc;
+ text-align: center;
+   }
+   .footer p {
+   font-size: 11px;
+   }
+   .footer a {
+   color: #ccccff;
+  }
+   div.addthis_toolbox {
+  width:180px;
+  margin: 0 auto;
+ }  
+   
+ </style>
+ 
+ <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42942469-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+ 
+</head>
+ <body>
+
+ 
+ 
+ 
+  <div class="container">
+
+      <div class="masthead">
+        <h3 class="muted">Bitstarter</h3>
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav nav-pills">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div> 
+   
+   <div class="container">
+     <div class="row-fluid heading">
+          <div class="span12">
+	             <h1>Weddings</h1>
+		      </div>
+     </div>
+
+     <div class="row-fluid subheading">
+          <div class="span12">
+	             <p class="lead">Innovative way to start the event</p>
+		      </div>
+     </div>   
+   
+      <div class="row-fluid section1">
+          <div class="span5 offset1 asset">
+          <img class="img-polaroid" src="http://st3.flashrolls.net/wallpaper/ca8/d5647773513d4878a031d1a4e1d1f84b.jpg">
         </div>
-        <div class="span5">
-          <h1 class="centered">FITSPECTOR</h1>
-          <h4 class="centered"><em>Serious</em> workout analysis for <em>curious</em> athletes.</h4>
-        </div>
-      </div>
-    </div>
-    <div id="carousel" class="carousel slide">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-	<div class="item active slide1">
-	    <img src="/img/slide1.jpg" alt="Train hard">
-	      <div class="carousel-caption-container">
-		    <div class="carousel-caption">
-		            <h4>Train hard</h4>
-			          <p>Whatever your sport, the best way to ensure progress is to train <em>hard</em> and train <em>consistently</em>.</p>
-				        <a class="btn btn-large btn-primary" onclick="$('.carousel').carousel('next')">Easy, then what?</a>
-					<blockquote><If you do not train hard you will never fulfill your </em   </div>
-														   </div>
+	     
+	     
+       
+	        <div class="span5 actions">
+		      <div class="span8 offset2">
+			       <div class="statistics">
+				    <div class="span4">
+
+				             <div class="linediv-l">
+					          <h3>1000</h3> <p>backers</p>
+						       </div>
+					             </div> 
+				        <div class="span4">
+					          <div class="linediv-c">
+						         <h3>$6000</h3> <p>of $10,000</p>
+							         </div>
+						    </div>
+					      <div class="span4">
+						  <div class="linediv-r">
+          <h3>10</h3> <p>days left</p>
 	      </div>
-	<div class="item slide2">
-	    <img src="/img/slide2.jpg" alt="Train smart">
-	      <div class="carousel-caption-container">
-		    <div class="carousel-caption">
-              <h4 class="text-right">Train smart</h4>
-              <p class="text-right">You need to train smart too. Only properly chosen training impulses will get you the results you are after.</p>
-              <p class="text-right">There is a reason why professional athletes have coaches.</p>
-	            <p class="text-right"><a class="btn btn-large btn-primary" onclick="$('.carousel').carousel('next')">OK, got it</a></p>
-		    <blockquote class="text-right"><Train, don't </emTell me how!</a></p>
-									  <blockquote class="text-right"><Knowledge is </emockquote>
-														        </div>
-  </div>
+						     </div>
+					            </div>
+			                 </div>
+
+		             <div class="span10 offset1">
+
+			           <div class="thermometer progress active">
+				                <div class="bar bar-success" style="width: 60%;"></div>
+						        <div class="bar bar-warning" style="width: 40%;"></div>
+							</div>
+				          </div>
+			      
+			      <a class="coinbase-button" data-code="0a6177a8fe82b5a5bff391a06bd0d770" href="https://coinbase.com/checkouts/0a6177a8fe82b5a5bff391a06bd0d770">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+			      
+			      <div class="span8 offset2 social">
+      <!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
 </div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fe42270caec614"></script>
+<!-- AddThis Button END -->
+			      </div>
+   
       </div>
-      <a class="left carousel-control" href="#carousel" data-slide="<<<<<<<<</a>
-      <a class="right carousel-control" href="#carousel" data-slide="class="badge badge-success">3</span><h5>Enjoy beautiful visualizations</h5><em>(Another fun part!)</em><br/>
-          <p class="text">Upload your workout data to Fitspector and enjoy
-            beautiful visualizations that will help you reveal trends and better
-            understand your workouts. After launch and for the first year
-            Fitspector will aim at delivering one new visualization every month,
-            so there will always be something new to try and look forward to.
-          </p>
-        </div>
-      </div>
-      <div class="span6">
-        <p class="alert alert-success">
-          <strong>Heads up:</strong> a demo of a sample visualization coming
-          up soon; stay tuned.  Or
-          <a href="#" class="goToNewsletter">join our newsletter</a> to be the first to know!
-        </p>
-      </div>
-    </div>
+     </div>
 
-    <!-- ------------------------------------------------ Preorder  ------------------------------------------------ -->
-    <div id="preorder" class="row-fluid">
-      <h3>Preorder</h3>
-    </div>
-    <div class="row-fluid">
-      <div class="span8 offset2">
-        <div id="mce-EMAIL-alert" class="alert alert-success centered">
-          <p>Follows us on any of the social services or subscribe for email updates</p>
-          <form action="http://fitspector.us7.list-manage2.com/subscribe/post?u=680fae86b2a098eec071ae350&amp;id=42a462a6da" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <a href="https://www.facebook.com/fitspector" target="_blank"><img src="img/facebook.png"></a>
-            <a href="https://twitter.com/fitspector" target="_blank"><img src="img/twitter.png"></a>
-            <a href="https://plus.google.com/115638171785797148025" target="_blank"><img src="img/gplus.png"></a>
-            <div id="mce-EMAIL-box" class="input-prepend">
-              <span class="add-on"><i class="icon-envelope"></i></span>
-	            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-            </div>
-            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
-          </form>
-        </div>
+     <div class="row-fluid section2">
+          <div class="span5 offset1 asset">
+	             <img class="img-polaroid" src="http://www.haaretz.com/polopoly_fs/1.505976.1367145655!/image/3809025339.jpg_gen/derivatives/landscape_640/3809025339.jpg">     
+		          </div>
+	    <div class="span5 copy">
+	            <p>
+		        The apps allowed to event owner to manage
+			  in a security and orderly way all the payment
+			  issues from the welcomes. 
+			    </p>
+		          </div>
       </div>
-    </div>
-    <div class="row-fluid">
-      <div class="span8">
-        <div class="alert alert-info">
-          <p>
-          Help Fitspector reach its funding target: <strong>preorder</strong>
-          (below) and try the Beta version of the service before it is open to
-          the public!
-          </p>
-        </div>
-        <div class="alert alert-info">
-          <p>
-          Also do not be shy about <strong>spreading the word</strong> about the
-          service; just use the social button on the left.
-          </p>
-        </div>
-        For preorders select your package below and then click one of the buy
-        buttons (for <a href="http://en.wikipedia.org/wiki/Paypal">PayPal</a>
-        or <a href="http://en.wikipedia.org/wiki/Bitcoins">BitCoin</a>
-        payments). Few words of explanation:
-        <ul class="preorder-expl">
-          <li><b>Early access</b> means access to a limited beta version of the
-            service. It will be at least 1 month (and likely longer) before the
-            service will be open to the general public.
-          <li><b>Regular Fitspector</b> account's analysis will be limited to
-            the workouts from the last 3 months and may exclude more complex
-            analysis, whereas <b>Fitspector Pro</b> accounts will be free of
-            such restrictions.
-          <li>If possible <b>please prefer Bitcoin payments</b>. Bitcoin is the
-            <a href="http://bitcoin.org" target="_blank">currency of the
-            future</a> and you can
-            consult <a href="http://howtobuybitcoins.info/" target="_blank">this
-            page</a> to learn how to buy BitCoins in your country.
-        </ul>
-      </div>
-      <div class="span4 actions">
-	<div class="span10 offset1">
-          <div class="stats-header">
-            Funding campaign progress:
-          </div>
-	    <div class="statistics">
-	          <div class="span4">
-		          <div class="linediv-l">
-			    <h3>6</h3> <p>backers</p>
-			          </div>
-			      </div>
-		      <div class="span4">
-			      <div class="linediv-c">
-				<h3>$305</h3> <p>of $15,000</p>
-				      </div>
-			          </div>
-		          <div class="span4">
-			          <div class="linediv-r">
-				    <h3 id="daysleft"></h3> <p>days left</p>
-				          </div>
-				      </div>
-			    </div>
-	    </div>
-	<div class="span10 offset1">
-	    <div class="thermometer progress active">
-	          <div class="bar bar-success" style="width: 2%;"></div>
-		      <div class="bar bar-warning" style="width: 98%;"></div>
-		        </div>
-          <div class="stats-disclaimer">
-	        <div class="span12 centered">
-              (Updated daily)
-            </div>
-          </div>
-	  </div>
-      </div>
-    </div>
-    <div class="row-fluid">
-      <div class="span4">
-        <div class="alert alert-warning pledge level1" onclick="selectPledge(1)">
-          <input type="radio" name="pledgeLevel" value="level1">
-          <u>Pledge <strong>10$</strong> or more for:</u>
-          <ul>
-            <li>early access to a regular Fitspector account.
-          </ul>
-          <div class="row-fluid payment-buttons">
-            <div class="method span6">
-              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="FSPY2HPPDU3W2">
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-              </form>
-            </div>
-            <div class="method span6">
-              <a class="coinbase-button" data-code="fe0d1cfc8c16b337bb6b1c1b67c48aac" data-button-style="buy_now_small" href="https://coinbase.com/checkouts/fe0d1cfc8c16b337bb6b1c1b67c48aac">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="span4">
-        <div class="alert alert-warning pledge level2" onclick="selectPledge(2)">
-          <input type="radio" name="pledgeLevel" value="level2">
-          <u>Pledge <strong>25$</strong> or more for:</u>
-          <ul>
-            <li>early access with a <u>3 month</u> subscription to a Fitspector
-            Pro account.
-          </ul>
-          <div class="row-fluid payment-buttons">
-            <div class="method span6">
-              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="JYPAVABL7CDFL">
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-              </form>
-            </div>
-            <div class="method span6">
-              <a class="coinbase-button" data-code="755772a1678b93d3e338a293b74c87aa" data-button-style="buy_now_small" href="https://coinbase.com/checkouts/755772a1678b93d3e338a293b74c87aa">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="span4">
-        <div class="alert alert-success pledge level3" onclick="selectPledge(3)">
-          <input type="radio" name="pledgeLevel" value="level3" checked>
-          <u>Pledge <strong>50$</strong> or more for:</u>
-          <ul>
-            <li>early access with a <u>1 year</u> subscription to a Fitspector
-            Pro account.
-          </ul>
-          <div class="row-fluid payment-buttons">
-            <div class="method span6">
-              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="N2XL7QLJQ6LY8">
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-              </form>
-            </div>
-            <div class="method span6">
-              <a class="coinbase-button" data-code="43ecab6f2c3352dfb075245467109ab2" data-button-style="buy_now_small" href="https://coinbase.com/checkouts/43ecab6f2c3352dfb075245467109ab2">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row-fluid">
-      <div class="span6">
-        <div class="alert alert-warning pledge level4" onclick="selectPledge(4)">
-          <input type="radio" name="pledgeLevel" value="level4">
-          <u>Pledge <strong>200$</strong> or more for:</u>
-          <ul>
-            <li>thank-you note on Fitspector's blog,
-            <li>a limited edition Fitspector T-shirt and
-            <li>early access with a <u>lifetime</u> subscription to a Fitspector
-            Pro account.
-          </ul>
-          <div class="row-fluid payment-buttons">
-            <div class="method span6">
-              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="HXYJLY2BSRTZ2">
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-              </form>
-            </div>
-            <div class="method span6">
-              <a class="coinbase-button" data-code="a1e15e5186d3bccb7594a538aec3f0d9" data-button-style="buy_now_small" href="https://coinbase.com/checkouts/a1e15e5186d3bccb7594a538aec3f0d9">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="span6">
-        <div class="alert alert-warning pledge level5" onclick="selectPledge(5)">
-          <input type="radio" name="pledgeLevel" value="level5">
-          <u>Pledge <strong>1000$</strong> or more for:</u>
-          <ul>
-            <li>a personal thank-you note on Fitspector's blog,
-            <li>a limited edition Fitspector T-shirt,
-            <li>early access with a <u>lifetime</u> subscription to a Fitspector
-              Pro account for you and up to 5 of your friends and
-            <li>a personally tailored data visualization!
-              (<a href="mailto:info@fitspector.com">contact us</a> for more details).
-          </ul>
-          <div class="row-fluid payment-buttons">
-            <div class="method span6">
-              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="VCQ4WPF5UL8RS">
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-              </form>
-            </div>
-            <div class="method span6">
-              <a class="coinbase-button" data-code="08f10e68a82c5b38696e61b95b846b69" data-button-style="buy_now_small" href="https://coinbase.com/checkouts/08f10e68a82c5b38696e61b95b846b69">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- ------------------------------------------------ FAQ  ------------------------------------------------ -->
-    <div id="faq" class="row-fluid faq">
-      <div class="span12">
-	<h3>FAQ</h3>
-	<div class="accordion" id="faq-accordion">
-	    <div class="accordion-group">
-	          <div class="accordion-heading">
-		          <a class="accordion-toggle" data-toggle="collapse"
-			      data-parent="#faq-accordion" href="#collapse-when-finished">
-                What happens when the funding period is over?
-		      </a>
-			      </div>
-		      <div id="collapse-when-finished" class="accordion-body collapse">
-			      <div class="accordion-inner">
-                Two options.  If Fitspector reaches it's funding target of
-                $15,000, giving us means to bring it to life then you can sit
-                back, relax and wait for it to come life! (also see
-                <a href="#" onclick="$('#collapse-when-ready').collapse('show');
-                $('#collapse-when-finished').collapse('hide'); return false">the
-                following</a> question).  If we do not reach the target we
-                reserve the right to cancel the project, in which case all
-                contributions will be fully refunded.
-		      </div>
+       <div class="row-fluid section3">
+	     <div class="span5 offset1 copy copy-right">
+	                
+	             <p>- Rid all of the primitive checks.</p>
+              <p>- Sms message send all of welcomes with all the details of the event, in addition
+		       they get link that allowed security payment directly to the event owner account.</p>  
+              <p>- Option to manage arrival permits.</p> 
+              <p>- Manage of reports about the welcomes.</p>
+              <p>- Option to write a greeting, and attach congratulation video and picture.</p>
+	         
+	         </div>
+	           <div class="span5 asset">
+		          <img class="img-polaroid" src="http://wedding-pictures.onewed.com/match/images/89604/etsy-weddings-handmade-wedding-decor-stationery-glittered-love-cake-topper.original.jpeg?1357313866"> 
 			          </div>
-		        </div>
-	      <div class="accordion-group">
-		    <div class="accordion-heading">
-		            <a class="accordion-toggle" data-toggle="collapse"
-			        data-parent="#faq-accordion" href="#collapse-when-ready">
-                When will Fitspector be ready to use?
-		      </a>
-			        </div>
-		        <div id="collapse-when-ready" class="accordion-body collapse">
-			        <div class="accordion-inner">
-				  The precise launch date is yet to be determined but in the worst
-				  case we'll deliver you Fitspector Beta as a Christmas present
-				  this year :).
-				        </div>
-				    </div>
-			  </div>
-	        <div class="accordion-group">
-		      <div class="accordion-heading">
-			      <a class="accordion-toggle" data-toggle="collapse"
-				  data-parent="#faq-accordion" href="#collapse-how-follow">
-                How will I be able to follow progress of Fitspector?
-		      </a>
-			          </div>
-		          <div id="collapse-how-follow" class="accordion-body collapse">
-			          <div class="accordion-inner">
-                First of all
-                <a href="#" class="goToNewsletter">subscribe to our newsletter</a>
-                so that we can keep you up to date. You can also follow the
-                <a href="http://fitspector.blogspot.com" target="_blank">Fitspector's blog</a>,
-                as well as follow us on
-                <a href="https://twitter.com/fitspector" target="_blank">Twitter</a>,
-                <a href="https://www.facebook.com/fitspector" target="_blank">Facebook</a> and
-                <a href="https://plus.google.com/115638171785797148025" target="_blank">Google+</a>.
-		      </div>
-				      </div>
-			    </div>
-		  <div class="accordion-group">
-		        <div class="accordion-heading">
-			        <a class="accordion-toggle" data-toggle="collapse"
-				    data-parent="#faq-accordion" href="#collapse-for-whom">
-                Who can benefit from Fitspector?
-		      </a>
-				    </div>
-			    <div id="collapse-for-whom" class="accordion-body collapse">
-			            <div class="accordion-inner">
-                In principle anyone doing fitness who is interested in gaining
-                insights into one's training.  However, most charts will work
-                best for running and cycling activities.
-		      </div>
-				        </div>
-			      </div>
-		    <div class="accordion-group">
-		          <div class="accordion-heading">
-			          <a class="accordion-toggle" data-toggle="collapse"
-				      data-parent="#faq-accordion" href="#collapse-different"> I'm
-                already using Strava/Endomondo/RunKeeper/...; why would I want
-                another service?
-				          </a>
-				      </div>
-			      <div id="collapse-different" class="accordion-body collapse">
-				      <div class="accordion-inner">
-                The above services are great and Fitspector is not trying to
-                compete with them. Instead it will focus on one particular
-                aspect                 experience in that area.<br/>  Therefore, you'll likely want to
-                use Fitspector <em>along</em> the service that you're using now;
-                not <em>instead</em>. We'll work hard to try to make it as
-                seamless as possible.
-		      </div>
-				          </div>
-			        </div>
-		      <div class="accordion-group">
-			    <div class="accordion-heading">
-			            <a class="accordion-toggle" data-toggle="collapse"
-				        data-parent="#faq-accordion" href="#collapse-uploads">
-                What will I need to use Fitspector?
-		      </a>
-				        </div>
-			        <div id="collapse-uploads" class="accordion-body collapse">
-				        <div class="accordion-inner">
-                Please note that Fitspector is <em>not</em> a data collection
-                service. It will allow easy upload of workout data in
-                <a href="http://en.wikipedia.org/wiki/Training_Center_XML_(TCX)">TCX</a> and
-                <a href="http://en.wikipedia.org/wiki/GPS_eXchange_Format">GPX</a>
-                file formats, so for starters you'll need a compatible device.<br/>
-                Depending on demand we will also try to provide easier ways of synchronizing
-                your workout data such as:
-                <ul>
-                  <li><a href="https://www.dropbox.com/">Dropbox</a> or
-                    <a href="https://drive.google.com">Google Drive</a>
-                    synchronization, that will allow you just to place your
-                    workouts files in appropriate folders and have them
-                    processed automatically by Fitspector.
-                  <li>Automatic synchronization with
-                  the <a href="http://runkeeper.com/">RunKeeper</a>
-                  account. RunKeeper seems to be the only workout tracking site
-                  that
-                  provides <a href="http://developer.runkeeper.com/healthgraph">API
-                  access</a> to user's data.
-                </ul>
-                Keep an eye on
-                <a href="#"
-                onclick="$('#collapse-how-to-follow').collapse('show');
-                $('#collapse-uploads').collapse('hide'); return false">the
-                blog</a> for more details.
-		      </div>
-					    </div>
-				  </div>
-		        <div class="accordion-group">
-			      <div class="accordion-heading">
-				      <a class="accordion-toggle" data-toggle="collapse"
-					  data-parent="#faq-accordion" href="#collapse-other">
-                What if I have some other question that is not covered here?
-		      </a>
-				          </div>
-			          <div id="collapse-other" class="accordion-body collapse">
-				          <div class="accordion-inner">
-                Just send an email to <a href="mailto:info@fitspector.com">info@fitspector.com</a>.
-                We'll do our best to answer your question within 48 hours.
-		      </div>
-					      </div>
-				    </div>
-			</div>
-      </div>
-    </div>
-    <div class="row-fluid footer">
-      <div class="span12">
-	<p>This work is licensed under the
-	    <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>
-	    </p>
-      </div>
-    </div>
-  </div>
-  <script>
-  </script>
-</body>
-</html>
-next">prev">> power.em>> strain.em>> potential.em>
+		          </div>  
+        
+        <div class="raw-fluid faq">
+	       <div class="span10 offset1">
+		             <h3>FAQ</h3>
+			            <div class="accordion" id="accordion2">
+				           <div class="accordion-group">
+					                 <div class="accordion-heading">
+							            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+								            What does FAQ stand for?
+									            </a>
+             </div>
+							      <div id="collapseOne" class="accordion-body collapse">
+               <div class="accordion-inner">
+                 Frequently Asked Question.
+               </div>
+              </div>
+             </div>
+					         <div class="accordion-group">
+						     <div class="accordion-heading">
+						               <a class="accordion-toggle" data-toggle="collapse"
+								       data-parent="#accordion2" href="#collapseTwo">
+								     What's a Frequently Asked Question?
+								         </a>
+							          </div>
+						          <div id="collapseTwo" class="accordion-body collapse">
+							                <div class="accordion-inner">
+									              A question which is commonaly asked by users.
+										          </div>    
+									             </div>
+							       </div>
+         </div>
+             </div>
+
+        <div class="raw-fluid footer">
+          <div class="span12">
+           <p>This work is licensed under
+           the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+           By-SA 3.0
+             </a>, without all the cruft that would otherwise be put at the bottom of the page. </p>
+         </div>
+        </div>
+	</div>
+	
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42942469-1', 'bitstart.net');
+  ga('send', 'pageview');
+
+ </script>
+	
+ </body>
+  </html>
